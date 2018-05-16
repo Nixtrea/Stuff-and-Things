@@ -1,0 +1,127 @@
+//This is a basic code that changes a number to Greek letter
+
+#include <iostream>
+
+using namespace std;
+
+int number = 0;
+int digit = 0;
+int hold;
+
+int main()
+{
+	
+	do
+	{
+		cout << "Enter the decimal value: ";
+		cin >> number;
+	} while (number <= 0);
+
+	cout << "The Greek equivilent is: ";
+
+
+		digit = number/1000;
+		digit = digit % 10;
+
+		switch (digit)
+		{
+		case 1: cout << ",A";
+			break;
+		case 2: cout << ",B";
+			break;
+		case 3: cout << ",G";
+			break;
+		case 4: cout << ",D";
+			break;
+		case 5: cout << ",E";
+			break;
+		case 6: cout << ",#";
+			break;
+		case 7: cout << ",Z";
+			break;
+		case 8: cout << ",Y";
+			break;
+		case 9: cout << ",H";
+			break;
+		}
+
+		digit = number / 100;
+		digit = digit % 10;
+
+		switch (digit)
+		{
+		case 1: cout << "R";
+			break;
+		case 2: cout << "S";
+			break;
+		case 3: cout << "T";
+			break;
+		case 4: cout << "U";
+			break;
+		case 5: cout << "F";
+			break;
+		case 6: cout << "C";
+			break;
+		case 7: cout << "$";
+			break;
+		case 8: cout << "W";
+			break;
+		case 9: cout << "3";
+			break;
+		}
+    
+		digit = number / 10;
+		digit = digit % 10;
+
+		switch (digit)
+		{
+		case 1: cout << "I";
+			break;
+		case 2: cout << "K";
+			break;
+		case 3: cout << "L";
+			break;
+		case 4: cout << "M";
+			break;
+		case 5: cout << "N";
+			break;
+		case 6: cout << "X";
+			break;
+		case 7: cout << "O";
+			break;
+		case 8: cout << "P";
+			break;
+		case 9: cout << "Q";
+			break;
+		}
+
+		digit = number % 10;
+
+		switch (digit)
+		{
+		case 1: cout << "A";
+			break;
+		case 2: cout << "B";
+			break;
+		case 3: cout << "G";
+			break;
+		case 4: cout << "D";
+			break;
+		case 5: cout << "E";
+			break;
+		case 6: cout << "#";
+			break;
+		case 7: cout << "Z";
+			break;
+		case 8: cout << "Y";
+			break;
+		case 9: cout << "H";
+			break;
+		}
+	
+	
+	cin >> hold;
+
+		return 0;
+
+}
